@@ -8,6 +8,8 @@ public class Account {
         out.print("(");
         out.print(address);
         out.print(") имеет на счету $");
-        out.print(balance);
+    }
+    public double getInterest(double percentageRate){
+        return balance*percentageRate/100.00;
     }
 }
